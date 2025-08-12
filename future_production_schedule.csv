@@ -1,0 +1,218 @@
+schedule_id,scheduled_date,powder_type,required_quantity_kg,priority,industry_sector,job_number
+5000,2025-02-03,Stainless Steel 17-4 PH,23.66,High,Aerospace,JOB5000
+5001,2025-02-03,Titanium Ti-6Al-2Sn-4Zr-2Mo,15.46,Medium,Medical,JOB5001
+5002,2025-02-03,Titanium Ti-6Al-4V,28.96,Low,Aerospace,JOB5002
+5003,2025-02-03,Titanium Ti-6Al-2Sn-4Zr-2Mo,12.27,Medium,Medical,JOB5003
+5004,2025-02-03,Titanium Ti-6Al-4V,8.11,Medium,Aerospace,JOB5004
+5005,2025-02-03,Cobalt Chrome CoCrMo,7.86,Medium,Aerospace,JOB5005
+5006,2025-02-04,Titanium Ti-6Al-2Sn-4Zr-2Mo,7.37,High,Medical,JOB5006
+5007,2025-02-04,Titanium Ti-6Al-2Sn-4Zr-2Mo,20.19,Low,Aerospace,JOB5007
+5008,2025-02-04,Stainless Steel 17-4 PH,51.44,Medium,Aerospace,JOB5008
+5009,2025-02-05,Titanium Ti-6Al-4V,10.0,Medium,Aerospace,JOB5009
+5010,2025-02-05,Inconel 625,42.0,Medium,Medical,JOB5010
+5011,2025-02-05,Cobalt Chrome CoCrMo,16.19,High,Aerospace,JOB5011
+5012,2025-02-05,Aluminum AlSi10Mg,7.21,Medium,Aerospace,JOB5012
+5013,2025-02-06,Titanium Ti-6Al-4V,5.0,Medium,Aerospace,JOB5013
+5014,2025-02-07,Titanium Ti-6Al-2Sn-4Zr-2Mo,16.75,Medium,Automotive,JOB5014
+5015,2025-02-07,Titanium Ti-6Al-4V,21.22,Medium,Aerospace,JOB5015
+5016,2025-02-07,Stainless Steel 17-4 PH,14.24,High,Aerospace,JOB5016
+5017,2025-02-10,Maraging Steel 300,14.97,Medium,Aerospace,JOB5017
+5018,2025-02-10,Stainless Steel 17-4 PH,16.21,Low,Energy,JOB5018
+5019,2025-02-11,Stainless Steel 316L,21.44,Medium,Medical,JOB5019
+5020,2025-02-12,Maraging Steel 300,24.6,Medium,Automotive,JOB5020
+5021,2025-02-12,Titanium Ti-6Al-2Sn-4Zr-2Mo,29.66,Medium,Aerospace,JOB5021
+5022,2025-02-12,Titanium Ti-6Al-4V,16.03,Medium,Automotive,JOB5022
+5023,2025-02-12,Titanium Ti-6Al-4V,11.59,Medium,Aerospace,JOB5023
+5024,2025-02-12,Titanium Ti-6Al-4V,48.37,Medium,Industrial,JOB5024
+5025,2025-02-12,Titanium Ti-6Al-2Sn-4Zr-2Mo,14.64,Medium,Industrial,JOB5025
+5026,2025-02-12,Stainless Steel 17-4 PH,46.29,Medium,Automotive,JOB5026
+5027,2025-02-12,Titanium Ti-6Al-2Sn-4Zr-2Mo,5.0,Medium,Medical,JOB5027
+5028,2025-02-12,Inconel 625,6.15,Medium,Automotive,JOB5028
+5029,2025-02-13,Stainless Steel 17-4 PH,23.98,Medium,Aerospace,JOB5029
+5030,2025-02-13,Titanium Ti-6Al-2Sn-4Zr-2Mo,11.72,Low,Automotive,JOB5030
+5031,2025-02-14,Titanium Ti-6Al-2Sn-4Zr-2Mo,27.07,Medium,Medical,JOB5031
+5032,2025-02-14,Titanium Ti-6Al-2Sn-4Zr-2Mo,44.53,Low,Automotive,JOB5032
+5033,2025-02-17,Inconel 625,23.89,High,Medical,JOB5033
+5034,2025-02-17,Titanium Ti-6Al-2Sn-4Zr-2Mo,28.35,Low,Aerospace,JOB5034
+5035,2025-02-17,Stainless Steel 316L,22.52,Medium,Medical,JOB5035
+5036,2025-02-17,Cobalt Chrome CoCrMo,5.0,Medium,Aerospace,JOB5036
+5037,2025-02-17,Titanium Ti-6Al-4V,12.15,Medium,Aerospace,JOB5037
+5038,2025-02-18,Titanium Ti-6Al-4V,9.02,Medium,Medical,JOB5038
+5039,2025-02-18,Maraging Steel 300,17.44,Low,Medical,JOB5039
+5040,2025-02-18,Titanium Ti-6Al-4V,13.56,Medium,Aerospace,JOB5040
+5041,2025-02-18,Titanium Ti-6Al-2Sn-4Zr-2Mo,17.8,Medium,Aerospace,JOB5041
+5042,2025-02-18,Nickel Alloy 718,9.61,Medium,Energy,JOB5042
+5043,2025-02-18,Aluminum AlSi10Mg,52.38,High,Medical,JOB5043
+5044,2025-02-18,Titanium Ti-6Al-2Sn-4Zr-2Mo,8.3,Medium,Medical,JOB5044
+5045,2025-02-19,Titanium Ti-6Al-4V,11.17,Medium,Aerospace,JOB5045
+5046,2025-02-19,Titanium Ti-6Al-4V,42.3,Medium,Aerospace,JOB5046
+5047,2025-02-20,Stainless Steel 17-4 PH,9.48,Low,Aerospace,JOB5047
+5048,2025-02-20,Inconel 625,7.6,Medium,Automotive,JOB5048
+5049,2025-02-21,Stainless Steel 17-4 PH,21.99,High,Aerospace,JOB5049
+5050,2025-02-21,Titanium Ti-6Al-2Sn-4Zr-2Mo,18.42,Medium,Energy,JOB5050
+5051,2025-02-21,Stainless Steel 17-4 PH,52.01,Medium,Automotive,JOB5051
+5052,2025-02-21,Titanium Ti-6Al-4V,9.62,Medium,Aerospace,JOB5052
+5053,2025-02-21,Titanium Ti-6Al-2Sn-4Zr-2Mo,10.16,Low,Automotive,JOB5053
+5054,2025-02-25,Stainless Steel 17-4 PH,37.84,Medium,Energy,JOB5054
+5055,2025-02-26,Stainless Steel 17-4 PH,19.1,Medium,Automotive,JOB5055
+5056,2025-02-26,Cobalt Chrome CoCrMo,20.75,Medium,Automotive,JOB5056
+5057,2025-02-26,Stainless Steel 17-4 PH,20.5,High,Automotive,JOB5057
+5058,2025-02-27,Cobalt Chrome CoCrMo,15.71,Medium,Automotive,JOB5058
+5059,2025-02-27,Titanium Ti-6Al-2Sn-4Zr-2Mo,35.16,High,Automotive,JOB5059
+5060,2025-02-27,Titanium Ti-6Al-4V,18.79,Medium,Medical,JOB5060
+5061,2025-02-27,Stainless Steel 17-4 PH,10.07,Medium,Medical,JOB5061
+5062,2025-02-28,Inconel 625,24.97,Medium,Aerospace,JOB5062
+5063,2025-02-28,Inconel 625,18.19,Medium,Aerospace,JOB5063
+5064,2025-02-28,Titanium Ti-6Al-2Sn-4Zr-2Mo,41.17,Medium,Energy,JOB5064
+5065,2025-03-03,Titanium Ti-6Al-4V,62.62,High,Medical,JOB5065
+5066,2025-03-04,Titanium Ti-6Al-2Sn-4Zr-2Mo,16.69,Medium,Industrial,JOB5066
+5067,2025-03-04,Titanium Ti-6Al-2Sn-4Zr-2Mo,15.32,Medium,Medical,JOB5067
+5068,2025-03-04,Maraging Steel 300,23.82,Medium,Automotive,JOB5068
+5069,2025-03-06,Maraging Steel 300,10.39,Medium,Medical,JOB5069
+5070,2025-03-06,Inconel 625,18.97,Medium,Aerospace,JOB5070
+5071,2025-03-06,Stainless Steel 17-4 PH,12.91,Medium,Automotive,JOB5071
+5072,2025-03-07,Titanium Ti-6Al-4V,22.99,Medium,Aerospace,JOB5072
+5073,2025-03-07,Stainless Steel 17-4 PH,17.31,Medium,Industrial,JOB5073
+5074,2025-03-07,Titanium Ti-6Al-2Sn-4Zr-2Mo,10.36,Medium,Energy,JOB5074
+5075,2025-03-07,Titanium Ti-6Al-2Sn-4Zr-2Mo,7.05,Medium,Aerospace,JOB5075
+5076,2025-03-07,Inconel 625,20.33,Low,Aerospace,JOB5076
+5077,2025-03-10,Titanium Ti-6Al-2Sn-4Zr-2Mo,25.86,Low,Automotive,JOB5077
+5078,2025-03-10,Titanium Ti-6Al-2Sn-4Zr-2Mo,17.07,Medium,Automotive,JOB5078
+5079,2025-03-10,Titanium Ti-6Al-2Sn-4Zr-2Mo,41.82,Medium,Industrial,JOB5079
+5080,2025-03-10,Titanium Ti-6Al-4V,5.31,Medium,Medical,JOB5080
+5081,2025-03-10,Stainless Steel 17-4 PH,37.21,Medium,Automotive,JOB5081
+5082,2025-03-10,Titanium Ti-6Al-2Sn-4Zr-2Mo,14.37,Medium,Automotive,JOB5082
+5083,2025-03-10,Titanium Ti-6Al-2Sn-4Zr-2Mo,8.12,Low,Automotive,JOB5083
+5084,2025-03-11,Stainless Steel 316L,26.72,Medium,Automotive,JOB5084
+5085,2025-03-11,Inconel 625,25.49,Medium,Aerospace,JOB5085
+5086,2025-03-11,Cobalt Chrome CoCrMo,14.86,Medium,Automotive,JOB5086
+5087,2025-03-11,Stainless Steel 17-4 PH,27.11,Medium,Energy,JOB5087
+5088,2025-03-12,Titanium Ti-6Al-4V,9.58,Medium,Medical,JOB5088
+5089,2025-03-12,Titanium Ti-6Al-4V,15.5,Medium,Automotive,JOB5089
+5090,2025-03-12,Cobalt Chrome CoCrMo,59.41,Medium,Industrial,JOB5090
+5091,2025-03-12,Maraging Steel 300,17.6,Medium,Automotive,JOB5091
+5092,2025-03-13,Cobalt Chrome CoCrMo,56.82,High,Medical,JOB5092
+5093,2025-03-14,Stainless Steel 17-4 PH,19.62,Medium,Automotive,JOB5093
+5094,2025-03-14,Titanium Ti-6Al-2Sn-4Zr-2Mo,33.33,Medium,Medical,JOB5094
+5095,2025-03-14,Inconel 625,72.96,Low,Aerospace,JOB5095
+5096,2025-03-14,Titanium Ti-6Al-2Sn-4Zr-2Mo,5.48,Medium,Energy,JOB5096
+5097,2025-03-17,Titanium Ti-6Al-4V,10.43,Medium,Medical,JOB5097
+5098,2025-03-18,Cobalt Chrome CoCrMo,11.8,High,Aerospace,JOB5098
+5099,2025-03-18,Titanium Ti-6Al-2Sn-4Zr-2Mo,32.76,Medium,Energy,JOB5099
+5100,2025-03-18,Titanium Ti-6Al-2Sn-4Zr-2Mo,10.29,Medium,Energy,JOB5100
+5101,2025-03-19,Cobalt Chrome CoCrMo,12.73,Medium,Automotive,JOB5101
+5102,2025-03-19,Titanium Ti-6Al-2Sn-4Zr-2Mo,19.95,High,Medical,JOB5102
+5103,2025-03-20,Stainless Steel 316L,38.67,Medium,Medical,JOB5103
+5104,2025-03-20,Titanium Ti-6Al-2Sn-4Zr-2Mo,9.75,Medium,Aerospace,JOB5104
+5105,2025-03-20,Stainless Steel 17-4 PH,31.46,Low,Medical,JOB5105
+5106,2025-03-20,Stainless Steel 17-4 PH,21.13,Medium,Aerospace,JOB5106
+5107,2025-03-20,Titanium Ti-6Al-4V,29.54,Medium,Medical,JOB5107
+5108,2025-03-20,Maraging Steel 300,13.15,Medium,Medical,JOB5108
+5109,2025-03-21,Stainless Steel 17-4 PH,6.91,Medium,Automotive,JOB5109
+5110,2025-03-21,Titanium Ti-6Al-2Sn-4Zr-2Mo,10.67,Medium,Aerospace,JOB5110
+5111,2025-03-21,Inconel 625,15.41,Medium,Energy,JOB5111
+5112,2025-03-21,Hastelloy X,42.35,Medium,Aerospace,JOB5112
+5113,2025-03-21,Stainless Steel 17-4 PH,6.74,Medium,Aerospace,JOB5113
+5114,2025-03-24,Titanium Ti-6Al-4V,10.44,Medium,Automotive,JOB5114
+5115,2025-03-24,Inconel 625,15.04,High,Energy,JOB5115
+5116,2025-03-24,Cobalt Chrome CoCrMo,26.04,Medium,Aerospace,JOB5116
+5117,2025-03-24,Inconel 625,21.62,Medium,Aerospace,JOB5117
+5118,2025-03-24,Inconel 625,41.27,Medium,Energy,JOB5118
+5119,2025-03-24,Titanium Ti-6Al-2Sn-4Zr-2Mo,10.03,Low,Automotive,JOB5119
+5120,2025-03-24,Titanium Ti-6Al-2Sn-4Zr-2Mo,17.79,Medium,Aerospace,JOB5120
+5121,2025-03-24,Stainless Steel 17-4 PH,20.39,Medium,Automotive,JOB5121
+5122,2025-03-24,Cobalt Chrome CoCrMo,6.96,Medium,Medical,JOB5122
+5123,2025-03-24,Titanium Ti-6Al-2Sn-4Zr-2Mo,11.32,Low,Automotive,JOB5123
+5124,2025-03-25,Titanium Ti-6Al-4V,44.46,High,Aerospace,JOB5124
+5125,2025-03-25,Titanium Ti-6Al-4V,14.81,Medium,Automotive,JOB5125
+5126,2025-03-25,Titanium Ti-6Al-4V,14.14,Medium,Energy,JOB5126
+5127,2025-03-25,Titanium Ti-6Al-4V,59.55,Medium,Medical,JOB5127
+5128,2025-03-25,Titanium Ti-6Al-4V,16.39,High,Energy,JOB5128
+5129,2025-03-26,Stainless Steel 17-4 PH,17.89,Medium,Medical,JOB5129
+5130,2025-03-26,Titanium Ti-6Al-2Sn-4Zr-2Mo,17.28,Low,Aerospace,JOB5130
+5131,2025-03-26,Cobalt Chrome CoCrMo,21.18,Medium,Aerospace,JOB5131
+5132,2025-03-26,Titanium Ti-6Al-4V,40.49,Medium,Medical,JOB5132
+5133,2025-03-26,Titanium Ti-6Al-2Sn-4Zr-2Mo,9.83,High,Aerospace,JOB5133
+5134,2025-03-26,Aluminum AlSi10Mg,35.89,Low,Automotive,JOB5134
+5135,2025-03-26,Cobalt Chrome CoCrMo,11.87,Medium,Aerospace,JOB5135
+5136,2025-03-27,Cobalt Chrome CoCrMo,19.35,Low,Medical,JOB5136
+5137,2025-03-27,Stainless Steel 17-4 PH,15.31,Medium,Aerospace,JOB5137
+5138,2025-03-27,Maraging Steel 300,15.73,Medium,Automotive,JOB5138
+5139,2025-03-27,Maraging Steel 300,16.16,High,Medical,JOB5139
+5140,2025-03-27,Stainless Steel 17-4 PH,39.24,Medium,Medical,JOB5140
+5141,2025-03-27,Stainless Steel 17-4 PH,38.26,Low,Medical,JOB5141
+5142,2025-03-27,Titanium Ti-6Al-4V,35.68,Medium,Medical,JOB5142
+5143,2025-03-27,Cobalt Chrome CoCrMo,5.0,Medium,Medical,JOB5143
+5144,2025-03-27,Titanium Ti-6Al-4V,13.16,Medium,Industrial,JOB5144
+5145,2025-03-27,Titanium Ti-6Al-2Sn-4Zr-2Mo,27.26,Medium,Medical,JOB5145
+5146,2025-03-28,Titanium Ti-6Al-2Sn-4Zr-2Mo,71.28,Medium,Medical,JOB5146
+5147,2025-03-28,Titanium Ti-6Al-2Sn-4Zr-2Mo,10.15,Medium,Medical,JOB5147
+5148,2025-03-31,Stainless Steel 17-4 PH,29.63,Medium,Medical,JOB5148
+5149,2025-04-01,Titanium Ti-6Al-2Sn-4Zr-2Mo,11.43,Medium,Aerospace,JOB5149
+5150,2025-04-01,Aluminum AlSi10Mg,11.43,Medium,Industrial,JOB5150
+5151,2025-04-02,Titanium Ti-6Al-4V,24.27,Medium,Aerospace,JOB5151
+5152,2025-04-02,Inconel 625,13.45,Low,Energy,JOB5152
+5153,2025-04-02,Maraging Steel 300,16.74,Medium,Aerospace,JOB5153
+5154,2025-04-02,Stainless Steel 17-4 PH,27.43,Medium,Medical,JOB5154
+5155,2025-04-02,Stainless Steel 17-4 PH,68.21,Low,Energy,JOB5155
+5156,2025-04-03,Inconel 625,16.4,Medium,Aerospace,JOB5156
+5157,2025-04-03,Stainless Steel 17-4 PH,35.11,High,Energy,JOB5157
+5158,2025-04-03,Titanium Ti-6Al-2Sn-4Zr-2Mo,20.33,Medium,Aerospace,JOB5158
+5159,2025-04-04,Cobalt Chrome CoCrMo,15.64,High,Medical,JOB5159
+5160,2025-04-07,Inconel 625,33.97,Medium,Automotive,JOB5160
+5161,2025-04-07,Stainless Steel 17-4 PH,20.36,Low,Automotive,JOB5161
+5162,2025-04-07,Stainless Steel 17-4 PH,16.55,Medium,Aerospace,JOB5162
+5163,2025-04-07,Titanium Ti-6Al-4V,20.82,Medium,Industrial,JOB5163
+5164,2025-04-08,Inconel 625,17.48,Low,Aerospace,JOB5164
+5165,2025-04-08,Maraging Steel 300,26.57,Medium,Energy,JOB5165
+5166,2025-04-10,Titanium Ti-6Al-2Sn-4Zr-2Mo,22.19,High,Medical,JOB5166
+5167,2025-04-10,Titanium Ti-6Al-2Sn-4Zr-2Mo,5.0,Medium,Aerospace,JOB5167
+5168,2025-04-10,Titanium Ti-6Al-4V,14.59,Medium,Medical,JOB5168
+5169,2025-04-11,Maraging Steel 300,14.29,Low,Aerospace,JOB5169
+5170,2025-04-11,Maraging Steel 300,15.28,High,Aerospace,JOB5170
+5171,2025-04-11,Inconel 625,65.57,Low,Automotive,JOB5171
+5172,2025-04-14,Inconel 625,39.88,Medium,Aerospace,JOB5172
+5173,2025-04-14,Titanium Ti-6Al-2Sn-4Zr-2Mo,11.4,Medium,Industrial,JOB5173
+5174,2025-04-14,Titanium Ti-6Al-2Sn-4Zr-2Mo,15.82,Medium,Aerospace,JOB5174
+5175,2025-04-14,Inconel 625,40.71,Medium,Aerospace,JOB5175
+5176,2025-04-15,Maraging Steel 300,5.0,Medium,Automotive,JOB5176
+5177,2025-04-15,Maraging Steel 300,12.11,Medium,Energy,JOB5177
+5178,2025-04-15,Cobalt Chrome CoCrMo,7.97,Medium,Aerospace,JOB5178
+5179,2025-04-16,Titanium Ti-6Al-2Sn-4Zr-2Mo,69.86,Medium,Medical,JOB5179
+5180,2025-04-18,Stainless Steel 17-4 PH,9.8,Medium,Aerospace,JOB5180
+5181,2025-04-18,Titanium Ti-6Al-2Sn-4Zr-2Mo,21.58,Medium,Aerospace,JOB5181
+5182,2025-04-18,Stainless Steel 17-4 PH,23.2,High,Medical,JOB5182
+5183,2025-04-18,Cobalt Chrome CoCrMo,17.49,Medium,Industrial,JOB5183
+5184,2025-04-21,Titanium Ti-6Al-2Sn-4Zr-2Mo,12.35,Medium,Aerospace,JOB5184
+5185,2025-04-21,Titanium Ti-6Al-4V,15.43,Medium,Industrial,JOB5185
+5186,2025-04-21,Titanium Ti-6Al-2Sn-4Zr-2Mo,27.71,High,Energy,JOB5186
+5187,2025-04-21,Titanium Ti-6Al-4V,15.85,Medium,Industrial,JOB5187
+5188,2025-04-21,Titanium Ti-6Al-2Sn-4Zr-2Mo,26.04,High,Automotive,JOB5188
+5189,2025-04-21,Aluminum AlSi10Mg,26.5,High,Energy,JOB5189
+5190,2025-04-21,Stainless Steel 17-4 PH,41.83,Medium,Industrial,JOB5190
+5191,2025-04-22,Maraging Steel 300,52.3,Medium,Aerospace,JOB5191
+5192,2025-04-22,Titanium Ti-6Al-2Sn-4Zr-2Mo,41.24,Medium,Automotive,JOB5192
+5193,2025-04-22,Stainless Steel 17-4 PH,15.89,Medium,Aerospace,JOB5193
+5194,2025-04-22,Stainless Steel 17-4 PH,26.61,Medium,Aerospace,JOB5194
+5195,2025-04-22,Titanium Ti-6Al-2Sn-4Zr-2Mo,18.79,High,Automotive,JOB5195
+5196,2025-04-22,Titanium Ti-6Al-4V,11.18,High,Medical,JOB5196
+5197,2025-04-22,Titanium Ti-6Al-2Sn-4Zr-2Mo,96.01,Medium,Aerospace,JOB5197
+5198,2025-04-23,Cobalt Chrome CoCrMo,33.18,Medium,Medical,JOB5198
+5199,2025-04-23,Stainless Steel 17-4 PH,29.36,Medium,Aerospace,JOB5199
+5200,2025-04-23,Titanium Ti-6Al-4V,37.11,Medium,Automotive,JOB5200
+5201,2025-04-23,Nickel Alloy 718,56.75,Medium,Medical,JOB5201
+5202,2025-04-24,Maraging Steel 300,57.41,Medium,Medical,JOB5202
+5203,2025-04-24,Stainless Steel 17-4 PH,9.26,Medium,Aerospace,JOB5203
+5204,2025-04-24,Titanium Ti-6Al-4V,13.3,Medium,Medical,JOB5204
+5205,2025-04-25,Titanium Ti-6Al-4V,9.02,Medium,Energy,JOB5205
+5206,2025-04-25,Titanium Ti-6Al-2Sn-4Zr-2Mo,42.02,Medium,Aerospace,JOB5206
+5207,2025-04-28,Titanium Ti-6Al-4V,37.74,Medium,Aerospace,JOB5207
+5208,2025-04-28,Titanium Ti-6Al-4V,21.34,Medium,Medical,JOB5208
+5209,2025-04-28,Titanium Ti-6Al-4V,16.07,Medium,Medical,JOB5209
+5210,2025-04-29,Titanium Ti-6Al-2Sn-4Zr-2Mo,7.14,Medium,Aerospace,JOB5210
+5211,2025-04-29,Titanium Ti-6Al-2Sn-4Zr-2Mo,21.88,Medium,Automotive,JOB5211
+5212,2025-04-29,Titanium Ti-6Al-4V,48.96,High,Aerospace,JOB5212
+5213,2025-04-29,Hastelloy X,15.51,Medium,Aerospace,JOB5213
+5214,2025-04-29,Stainless Steel 17-4 PH,24.77,High,Aerospace,JOB5214
+5215,2025-04-29,Titanium Ti-6Al-2Sn-4Zr-2Mo,5.0,Low,Automotive,JOB5215
+5216,2025-04-30,Maraging Steel 300,13.06,Low,Aerospace,JOB5216
