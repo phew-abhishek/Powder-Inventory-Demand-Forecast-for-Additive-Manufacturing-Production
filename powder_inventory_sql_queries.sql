@@ -1,11 +1,10 @@
 
--- =============================================================================
+
 -- POWDER INVENTORY & DEMAND FORECAST - SQL QUERIES
--- For AM Production Scheduling and Inventory Optimization
+-->> For AM Production Scheduling and Inventory Optimization
 -- =============================================================================
 
 -- 1. HISTORICAL DEMAND AGGREGATION QUERIES
--- =============================================================================
 
 -- Monthly demand aggregation by powder type
 SELECT 
@@ -19,7 +18,7 @@ SELECT
     SUM(total_cost_usd) as total_value_usd,
     AVG(unit_cost_usd) as avg_unit_cost_usd,
     STDDEV(quantity_kg) as demand_std_dev
-FROM am_orders 
+FROM am_orders_historical
 WHERE order_date >= DATE_SUB(NOW(), INTERVAL 18 MONTH)
 GROUP BY powder_type, DATE_FORMAT(order_date, '%Y-%m'), YEAR(order_date), MONTH(order_date)
 ORDER BY powder_type, order_year, order_month_num;
@@ -32,7 +31,7 @@ SELECT
     COUNT(*) as order_count,
     SUM(quantity_kg) as weekly_demand_kg,
     AVG(quantity_kg) as avg_order_size_kg
-FROM am_orders
+FROM am_orders_historical
 WHERE order_date >= DATE_SUB(NOW(), INTERVAL 12 MONTH)
 GROUP BY powder_type, YEARWEEK(order_date, 1), DATE(DATE_SUB(order_date, INTERVAL WEEKDAY(order_date) DAY))
 ORDER BY powder_type, year_week;
@@ -43,7 +42,7 @@ WITH monthly_avg AS (
         powder_type,
         MONTH(order_date) as month_num,
         AVG(quantity_kg) as avg_monthly_demand
-    FROM am_orders
+    FROM am_orders_historical
     WHERE order_date >= DATE_SUB(NOW(), INTERVAL 24 MONTH)
     GROUP BY powder_type, MONTH(order_date)
 ),
@@ -51,7 +50,7 @@ overall_avg AS (
     SELECT 
         powder_type,
         AVG(quantity_kg) as overall_avg_demand
-    FROM am_orders
+    FROM am_orders_historical
     WHERE order_date >= DATE_SUB(NOW(), INTERVAL 24 MONTH)
     GROUP BY powder_type
 )
@@ -92,7 +91,7 @@ FROM (
         powder_type,
         DATE_FORMAT(order_date, '%Y-%m') as order_month,
         SUM(quantity_kg) as total_demand_kg
-    FROM am_orders
+    FROM am_orders_historical
     GROUP BY powder_type, DATE_FORMAT(order_date, '%Y-%m')
 ) monthly_data
 ORDER BY powder_type, order_month;
@@ -107,7 +106,7 @@ SELECT
     SUM(quantity_kg) as demand_kg,
     AVG(quantity_kg) as avg_order_kg,
     SUM(total_cost_usd) as total_value
-FROM am_orders
+FROM am_orders_historical
 WHERE order_date >= DATE_SUB(NOW(), INTERVAL 12 MONTH)
 GROUP BY powder_type, DATE_FORMAT(order_date, '%Y-%m'), priority, industry_sector
 ORDER BY powder_type, order_month, priority, industry_sector;
@@ -149,7 +148,7 @@ SELECT
     END as stock_status,
     pi.current_stock_kg - pi.reorder_point_kg as stock_buffer_kg,
     ROUND(pi.current_stock_kg / NULLIF(recent_demand.avg_weekly_demand, 0), 1) as weeks_of_supply
-FROM powder_inventory pi
+FROM powder_inventory_master as pi
 LEFT JOIN (
     SELECT 
         powder_type,
@@ -159,7 +158,7 @@ LEFT JOIN (
             powder_type,
             YEARWEEK(order_date, 1) as year_week,
             SUM(quantity_kg) as weekly_demand_kg
-        FROM am_orders
+        FROM am_orders_historical
         WHERE order_date >= DATE_SUB(NOW(), INTERVAL 12 WEEK)
         GROUP BY powder_type, YEARWEEK(order_date, 1)
     ) weekly_data
@@ -170,7 +169,7 @@ LEFT JOIN (
 -- =============================================================================
 
 /*
-CREATE TABLE powder_lots (
+CREATE TABLE powder_lots_tracking (
     lot_id VARCHAR(50) PRIMARY KEY,
     powder_type VARCHAR(100),
     quantity_kg DECIMAL(10,2),
@@ -201,7 +200,7 @@ SELECT
         WHEN DATEDIFF(expiry_date, CURDATE()) <= 60 THEN 'WARNING_EXPIRY'
         ELSE 'GOOD'
     END as expiry_status
-FROM powder_lots
+FROM powder_lots_tracking 
 WHERE status = 'AVAILABLE'
 ORDER BY powder_type, expiry_date;
 
@@ -213,7 +212,7 @@ SELECT
     pl.expiry_date,
     DATEDIFF(pl.expiry_date, CURDATE()) as days_to_expiry,
     ROW_NUMBER() OVER (PARTITION BY pl.powder_type ORDER BY pl.expiry_date) as allocation_priority
-FROM powder_lots pl
+FROM powder_lots_tracking as pl
 WHERE pl.status = 'AVAILABLE' 
     AND pl.expiry_date > CURDATE()
     AND pl.powder_type = 'Titanium Ti-6Al-4V'  -- Example for specific powder
@@ -231,7 +230,7 @@ SELECT
     STDDEV(quantity_kg) as demand_std_dev,
     AVG(unit_cost_usd) as avg_unit_cost,
     SUM(total_cost_usd) as total_annual_value
-FROM am_orders
+FROM am_orders_historical
 WHERE order_date >= DATE_SUB(NOW(), INTERVAL 12 MONTH)
 GROUP BY powder_type
 ORDER BY annual_demand_kg DESC;
@@ -244,7 +243,7 @@ SELECT
     MIN(lead_time_days) as min_lead_time_days,
     MAX(lead_time_days) as max_lead_time_days,
     STDDEV(lead_time_days) as lead_time_std_dev
-FROM powder_inventory pi
+FROM powder_inventory_master as pi
 GROUP BY powder_type, supplier_name;
 
 -- 6. PRODUCTION SCHEDULE INTEGRATION
@@ -288,7 +287,7 @@ SELECT
         ) < pi.safety_stock_kg THEN 'SHORTAGE_RISK'
         ELSE 'ADEQUATE'
     END as stock_adequacy
-FROM production_schedule ps
+FROM future_production_schedule as ps
 JOIN powder_inventory pi ON ps.powder_type = pi.powder_type
 WHERE ps.scheduled_date <= DATE_ADD(CURDATE(), INTERVAL 90 DAY)
 ORDER BY ps.powder_type, ps.scheduled_date;
@@ -325,7 +324,7 @@ SELECT
         2
     ) as expiry_rate_percent,
     SUM(CASE WHEN status = 'EXPIRED' THEN quantity_kg * unit_cost_usd ELSE 0 END) as expired_value_usd
-FROM powder_lots
+FROM powder_lots_tracking
 WHERE received_date >= DATE_SUB(CURDATE(), INTERVAL 12 MONTH)
 GROUP BY powder_type;
 
@@ -340,7 +339,7 @@ FROM (
     SELECT 
         powder_type,
         SUM(quantity_kg) as annual_demand_kg
-    FROM am_orders
+    FROM am_orders_historical
     WHERE order_date >= DATE_SUB(NOW(), INTERVAL 12 MONTH)
     GROUP BY powder_type
 ) demand
@@ -351,3 +350,4 @@ JOIN (
     FROM powder_inventory
     GROUP BY powder_type
 ) inventory ON demand.powder_type = inventory.powder_type;
+
